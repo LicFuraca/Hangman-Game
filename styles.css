@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@200;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Arima", cursive;
+  color: #7c7f70;
+}
+
+main {
+  height: 110vh;
+  width: 100%;
+  background-color: #fefae0;
+}
+
+.presentation {
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #d4a373;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.figure-container {
+  fill: transparent;
+  stroke: #7c7f70;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.man-figure {
+  display: none;
+}
+
+.wrong-letters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrong-letters {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #7c7f70;
+}
+
+.word-container {
+  text-align: center;
+}
+
+.word {
+  font-size: 4rem;
+  letter-spacing: 15px;
+  color: #a3805d;
+}
+
+.keyboard {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: #d4a373;
+  color: #fefae0;
+  border: 1px solid #fefae0;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background-color: rgba(212, 163, 115, 0.8);
+}
+
+.reset-container {
+  text-align: center;
+}
+
+.play-btn {
+  padding: 0.5rem 1rem;
+  background-color: #a3805d;
+  color: #fff;
+  border: 1px solid #a3805d;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: rgb(163, 128, 93, 0.7);
+  color: #3b2e21;
+}
+
+.is-game-over {
+  font-size: 3rem;
+  color: #7c7f70;
+}
+
+.fadeOff {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#show-answer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .game-container {
+    padding: 1.5rem;
+  }
+  .wrong-letters-container {
+    text-align: center;
+  }
+  #wrong-letters {
+    font-size: 1.2rem;
+  }
+  .word {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    margin: 0.3rem 0.7rem;
+  }
+  .play-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+  }
+  .is-game-over {
+    font-size: 2rem;
+  }
+  #show-answer {
+    font-size: 1rem;
+  }
+}

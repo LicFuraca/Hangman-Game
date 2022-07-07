@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="presentation">
+        <h1>Bienvenidos al juego del ahorcado</h1>
+        <h5>Encontrá al <b>animal</b> oculto!</h5>
+      </div>
+
+      <div class="game-container">
+        <svg class="figure-container" height="250" width="200">
+          <!-- Rod -->
+          <line x1="60" y1="20" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="50" />
+          <line x1="60" y1="20" x2="60" y2="230" />
+          <line x1="20" y1="230" x2="100" y2="230" />
+
+          <!-- Head -->
+          <circle class="man-figure" cx="140" cy="70" r="20" />
+          <!-- Body -->
+          <line x1="140" y1="90" x2="140" y2="150" class="man-figure" />
+          <!-- Arms -->
+          <line x1="140" y1="110" x2="120" y2="140" class="man-figure" />
+          <line x1="140" y1="110" x2="160" y2="140" class="man-figure" />
+          <!-- Legs -->
+          <line x1="140" y1="150" x2="120" y2="180" class="man-figure" />
+          <line x1="140" y1="150" x2="160" y2="180" class="man-figure" />
+        </svg>
+
+        <!-- Wrong Letters -->
+        <div class="wrong-letters-container">
+          <h3>Letras incorrectas:</h3>
+          <div id="wrong-letters"></div>
+        </div>
+      </div>
+
+      <div class="word-container">
+        <div class="word" id="word">Here goes the Word!</div>
+      </div>
+      <div class="keyboard"></div>
+      <div class="reset-container">
+        <p id="show-answer"></p>
+        <button class="play-btn fadeOff">Volver a jugar</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
